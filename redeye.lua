@@ -1,9 +1,7 @@
 do
     local a = getrawmetatable(game)
+    setreadonly(a, false)
     local b, c = a.__index, a.__namecall
-    do
-        local d = setreadonly or changereadonly or make_writeable or fullaccess(a, false)
-    end
     local game = game
     local e = game.HttpService
     local f = game.GetObjects
